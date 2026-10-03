@@ -1,0 +1,14 @@
+
+        h2{
+            font-family: "Noto Sans", sans-serif;
+            background-image: url(img/2.png);
+            background-size: cover;
+            background-clip: text;
+            color: transparent;
+            animation: animate 20s linear infinite;
+        }
+        @keyframes animate{
+            to{
+                background-position-x:-500px ;
+            }
+        }

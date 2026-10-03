@@ -1,0 +1,169 @@
+/* Estilos para la sección de Galería Multimedia */
+.gallery-section {
+    max-width: 1200px;
+    margin: 2rem auto;   /* Margen más compacto para celulares */
+    padding: 0 1rem;     /* Padding lateral más seguro para pantallas pequeñas */
+    box-sizing: border-box;
+}
+
+/* Ajustes para tablets y laptops (desde 768px hacia arriba) */
+@media (min-width: 768px) {
+    .gallery-section {
+        margin: 4rem auto;
+        padding: 0 2rem;
+    }
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-card {
+    background: var(--bg-light);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+}
+.section-title{
+    border-radius: 10px;
+    background-color: #adb9b9;
+    box-shadow: 0 0 15px rgba(220, 231, 114, 0.8), 0 0 30px rgba(0, 255, 255, 0.4);
+}
+.media-container {
+    width: 100%;
+    height: 220px;
+    background-color: #000;
+    position: relative;
+}
+.media-container img, 
+.media-container video,
+.media-container iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: none;
+}
+.gallery-content {
+    padding: 1.5rem;
+}
+.gallery-content h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+.gallery-content p {
+    font-size: 0.95rem;
+    color: var(--text-gray);
+}
+/* Contenedor principal de la sección ----------------------------*/
+/* Contenedor principal de la sección */
+.elementor-element.elementor-element-a4c09b9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #adb9b9;
+}
+
+/* Contenedor interno para alinear elementos */
+.elementor-element .e-con-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo del título principal */
+.elementor-heading-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #163370;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* Contenedor de botones (alineados en fila y adaptables en móviles) */
+.elementor-element.elementor-element-3dcdcfee {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+}
+
+/* Estilos personalizados para los botones de servicios */
+.btn-servicios .elementor-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #163370;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #163370;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn-servicios .elementor-button:hover {
+    background-color: #163370;
+    color: #ffffff;
+}
+
+/* Cambio de color de los iconos SVG al pasar el cursor o por defecto */
+.btn-servicios .elementor-button svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    fill: #163370;
+    transition: fill 0.3s ease;
+}
+
+.btn-servicios .elementor-button:hover svg {
+    fill: #ffffff;
+}
+
+/* Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .elementor-heading-title {
+        font-size: 1.5rem;
+    }
+    
+    .elementor-element.elementor-element-3dcdcfee {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .btn-servicios {
+        width: 100%;
+        text-align: center;
+    }
+}
+.gallery-section {
+    max-width: 1200px;
+    /* Se ajusta de manera fluida entre 2rem y 4rem de margen, y entre 1rem y 2rem de padding */
+    margin: clamp(2rem, 5vw, 4rem) auto;
+    padding: 0 clamp(1rem, 3vw, 2rem);
+    box-sizing: border-box;
+}
+/* Ajustes para pantallas más grandes (Laptops y PCs) */
+@media (min-width: 768px) {
+    .section-title {
+        padding: 1.5rem 2.5rem; /* Más espacio en pantallas grandes */
+        box-shadow: 0 0 15px rgba(220, 231, 114, 0.8), 0 0 30px rgba(0, 255, 255, 0.4); /* Sombra completa original */
+    }
+}
